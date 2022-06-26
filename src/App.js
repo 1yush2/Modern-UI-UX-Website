@@ -1,13 +1,29 @@
-import { Navbar } from "./components";
-import { Blogs } from "./containers";
+import { Cta, Brand, Navbar } from "./components";
+import {
+  Footer,
+  Blogs,
+  Possibility,
+  Features,
+  WhatGpt3,
+  Header,
+} from "./containers";
+import "./app.css";
 
 function App() {
   return (
-    <>
-      <h1>Responsive UI/UX website</h1>
-      <Navbar />
+    <div className="App">
+      <div className="gradient__bg">
+        <Navbar />
+        <Header />
+      </div>
+      <Brand />
+      <WhatGpt3 />
+      <Features />
+      <Possibility />
+      <Cta />
       <Blogs />
-    </>
+      <Footer />
+    </div>
   );
 }
 
